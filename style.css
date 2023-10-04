@@ -1,0 +1,528 @@
+/* google font */
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap');
+
+body,h1,h2,h3,h4,h5,h6,a,span{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Header / Navbar */
+.logo a{
+    font-size: 30px;
+    font-weight: 600;
+}
+.menu a{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    color: #111;
+    transition: .5s;
+}
+.menu a:hover{
+    color: #913bff;
+}
+.menu a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #913bff;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    transition: .5s;
+}
+.menu a:hover::after{
+    color: #913bff;
+    width: 90%;
+}
+.tel-menu{
+    font-size: 25px;
+    margin: 0 70px;
+}
+.tel-menu p{
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.tel-menu a{
+    color: #ff7a41;
+}
+.header-btn .btn{
+    color: #fff;
+    background: #ff7a41;
+    padding: 10px 18px;
+    font-size: 22px;
+    font-weight: 500;
+    transition: .3s;
+}
+.header-btn .btn:hover{
+    background: #e7581a;
+}
+
+/* Header / Navbar Css End */
+
+/* Banner CSs Start */
+
+    .banner-section{
+        padding: 100px 0;
+        overflow: hidden;
+    }
+    .banner-content-text{}
+    .banner-content-text h6{
+        color: #ff7a41;
+        font-size: 23px;
+        font-weight: 400;
+
+    }
+    .banner-content-text h2{
+        font-size: 34px;
+        font-weight: 700;
+        margin: 26px 0;
+    }
+    .banner-content-text p{
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .banner-btn{
+        align-items: center;
+        gap: 40px;
+    }
+    .banner-btn a{
+        color: #ff7a41;
+        font-size: 22px;
+        font-weight: 500;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .banner-rightbar{
+        position: relative;
+        z-index: 1;
+        text-align: right;
+    }
+    .banner-rightbar::after {
+        content: "";
+        background: #f8feff;
+        width: 800px;
+        height: 700px;
+        position: absolute;
+        top: -30%;
+        right: -30%;
+        z-index: -1;
+        border-radius: 50%;
+    }
+    .banner-img img{
+    position: relative;
+    left: 70px;
+    }
+/* Banner CSs End */
+
+/* Service Section Css */
+
+.service-section{
+    padding: 100px 0;
+}
+.service-text{}
+.service-text h6{
+    font-size: 24px;
+    color: #ff7a41;
+    margin-bottom: 30px;
+}
+.service-text h2{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.service-content{
+    margin-bottom: 50px;
+}
+.service-content p{
+    font-size: 23px;
+    line-height: 1.5em;
+}
+
+.service-item{
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.service-item:hover{
+    transform: translateY(-20px);
+}
+.service-item span{
+    font-size: 40px;
+    color: #ff7a41;
+}
+.service-item h4{
+    margin: 30px 0;
+}
+.service-item h4 a{
+    color: #111;
+    text-decoration: none;
+    transition: .5s;
+}
+.service-item h4 a:hover{
+    color: #913bff;
+}
+.service-item p{
+    font-size: 23px;
+    line-height: 1.7;
+}
+/* Service Section Css End */
+
+/* Business Section Start */
+
+.business{
+    background: url(./img/background1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    overflow: hidden;
+}
+.business-content{
+    z-index: 11;
+    position: relative;
+}
+.business-content h6{
+    font-size: 29px;
+    color: #ff7a41;
+    font-weight: 400;
+    margin: 25px 0;
+}
+.business-content h2{
+    font-size: 80px;
+    font-weight: 400;
+}
+.business-content p{
+    font-size: 23px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.business-img{
+    position: relative;
+    z-index: 1;
+}
+.business-img::before{
+    content: "";
+    position: absolute;
+    top: -51%;
+    right: -40%;
+    width: 918px;
+    height: 900px;
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+}
+/* Business Section End */
+
+/* Our Service Section Css */
+
+.our-service-section{
+    padding: 100px 0;
+    background: #ff7a41;
+    color: #fff;
+}
+.service-heading h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.single-service{
+    padding: 40px;
+}
+.single-service span{
+    font-size: 40px;
+    color: #ec2016;
+}
+.single-service h4{
+    margin: 30px 0;
+}
+.single-service h4 a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    transition: .5s;
+}
+.single-service h4 a:hover{
+    color: #ddd;
+    text-decoration: underline;
+}
+.single-service p{
+    font-size: 25px;
+    font-weight: 400;
+}
+/* Our Service Section Css End */
+
+/* Seo Solution Section Css */
+
+.seo-solution-section{
+    background: url(./img/background1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+}
+
+.solution-text{}
+.solution-text h5{
+    color: #ff7a41;
+    font-size: 30px;
+    font-weight: 400;
+}
+.solution-text h1{
+    font-size: 70px;
+    font-weight: 400;
+    margin: 25px 0;
+
+}
+.solution-text p{
+    font-size: 30px;
+    color: #606060;
+    font-weight: 300;
+}
+
+/* Seo Solution Section Css End */
+
+/* Data Count Section- */
+
+.data-count-section{
+    padding: 100px 0;
+}
+.data-item{
+    background: #ff7a41;
+    color: #fff;
+    padding: 80px;
+    text-align: center;
+    border-radius: 20px;
+}
+.data-number{
+
+}
+.data-number h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.data-number p{
+    font-size: 20px;
+}
+/* Data Count Section End */
+
+/* Client Area  */
+
+.client-section{
+    background: #004ab8;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+.client-heading{}
+.client-heading h1{
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.client-content{
+    background: #00398d;
+    padding: 30px;
+    border-radius: 20px;
+}
+.client-content span{
+    font-size: 70px;
+}
+.client-content p{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+/* Client Area End */
+
+/* Marketing Service */
+
+.marketing-service{
+    padding: 100px 0;
+}
+.marketing-text-content{}
+.marketing-text-content h6{
+    color: #ff7a41;
+    font-size: 25px;
+    font-weight:400;
+}
+.marketing-text-content h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.marketing-service-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+
+}
+.marketing-service-item:hover span{
+    background: #913bff;
+    color: #fff;
+}
+.marketing-service-item span{
+    display: inline-block;
+    color: #ff7a41;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #dadada;
+    margin-right: 30px;
+    font-size: 20px;
+    transition: .5s;
+}
+.marketing-service-item h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.marketing-service-item p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.marketing-img{
+    position: relative;
+    top: 100px;
+}
+/* Marketing Service End */
+
+/* Pricing  Table Css  */
+
+.pricing-table-section{
+    background: url(./img/background6.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+.pt-heading{}
+.pt-heading h6{
+    color: #ff7a41;
+    font-size: 30px;
+    font-weight: 400;
+}
+.pt-heading h2{
+    font-size: 60px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+.pricing-table{
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+.pricing-table h6{
+    color: #767676;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.pricing-table .display-6{
+    font-size: 60px;
+    font-weight: 600;
+}
+.pricing-table strong{
+    font-size: 20px;
+}
+.pricing-table p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.pricing-table .header-btn .btn{
+    margin-top: 60px;
+    border-radius: 30px;
+}
+.pricing-2{
+    background: #ff7a41 ;
+    color: #fff;
+}
+.pricing-2 h6{
+    color: #fff;
+}
+.pricing-2 .header-btn .btn{
+    background: #da5820;
+    color: #fff;
+}
+.pt-bottom p{
+    color: #767676;
+    font-size: 25px;
+}
+/* Pricing  Table Css End */
+
+/* Contact Area Start  */
+
+.contact-section{
+    background: #ff7a41;
+    padding: 80px 0;
+}
+.contact-text-content{
+
+}
+.contact-text-content h3{
+    color: #fff;
+    font-size: 60px;
+}
+
+.form-container{
+    background: #fff;
+    border-radius: 10px; 
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    align-content: center;
+}
+.form-container input{
+    color: #000;
+    font-size: 20px;
+    outline: none;
+    border: transparent;
+    padding: 10px 50px 10px 15px;
+    
+}
+.form-container button{
+    color: #fff;
+    background: #ff7a41;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-bottom h5{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+/* Contact Area End */
+
+/* Footet Section */
+
+.footer-section{
+    background: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-section p{
+    color: #ffff;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* Footet Section End */
